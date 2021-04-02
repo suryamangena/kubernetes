@@ -42,3 +42,37 @@ K8 needs cotainer to be wrapped in pods. Scaling and self healing needs pods wra
     -Watches API server for new work tasks
     -Assign work to cluser nodes
 Note: [Refer to sanpshot](images/scheduler-controller.png)
+
+## [Kubelet](images/kubelet.png)
+    - Main kubernetes agent that run on every node 
+    - Registers node with cluster, watches api server on the master for the new work assignments
+    - Report back to master and maintain state of clusters and running apps
+    - kubelet don't how to run containers
+
+## [Container runtime](images/container-runtime.png)
+    -Can be Docker
+    -Pluggable: Container Runtime Interface (CRI)
+        - Docker, containerd, CRI-O, Kata
+
+## [Kube-proxy](images/kube-proxy.png)
+    -Networking Component
+    -Pod IP Address-> it assign unique ip address to the pod 
+    -If pod has multicontainers all the containers will get single ip and if we want to reach each individual containers. Proxy use light weight load balancer to manage
+
+## Virtual Kubelet
+    -No nodes
+    -Pods run on cloud's hosted container backend
+
+## [Declarative Model & Desired State](images/state.png)
+    -Describe the end/desire state in a manifest file. Manifest file is a description what it has to look like and it is not a long list of commands to achieve desire state.
+     Long list of commands is called as imperative method
+    -Post that manifest file to the apiserver in master and its upto kubernetes to do whatever it is necessary to get end state
+
+## Pods
+    Kubernetes can only runs containers within pods, containers without pods are not eligible to run in kubernetes
+    [Pod is a shared execution envrionment (network, memory, volume )](images/pods-loosely-tightly.png)
+    [Never scale by adding more containers to a single mod, instead add more pods for scaling](images/pods-scaling.png)
+
+    SnapShots:
+    1) Pods Loosely and Tightly Coupled 
+    2) Scaling 
