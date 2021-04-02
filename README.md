@@ -18,7 +18,7 @@ Nodes do the work
 ## Pods
 K8 needs cotainer to be wrapped in pods. Scaling and self healing needs pods wraped inside the deployment.
 
-## [Architecture](images/k8-architecture.png)
+## [Architecture](images/K8-architecture.png)
 
 ## Kube-apiserver
     - Frontend to the control panel 
