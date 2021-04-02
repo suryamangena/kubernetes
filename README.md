@@ -41,4 +41,4 @@ K8 needs cotainer to be wrapped in pods. Scaling and self healing needs pods wra
 ## Kube-scheduler
     -Watches API server for new work tasks
     -Assign work to cluser nodes
-    Note: [Refer to sanpshot](images/scheduler-controller.png)
+Note: [Refer to sanpshot](images/scheduler-controller.png)
