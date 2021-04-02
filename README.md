@@ -69,10 +69,6 @@ Note: [Refer to sanpshot](images/scheduler-controller.png)
     -Post that manifest file to the apiserver in master and its upto kubernetes to do whatever it is necessary to get end state
 
 ## Pods
-    Kubernetes can only runs containers within pods, containers without pods are not eligible to run in kubernetes
-    [Pod is a shared execution envrionment (network, memory, volume )](images/pods-loosely-tightly.png)
-    [Never scale by adding more containers to a single mod, instead add more pods for scaling](images/pods-scaling.png)
-
-    SnapShots:
-    1) Pods Loosely and Tightly Coupled 
-    2) Scaling 
+Kubernetes can only runs containers within pods, containers without pods are not eligible to run in kubernetes
+[Pod is a shared execution envrionment (network, memory, volume )](images/pods-loosely-tightly.png)
+[Never scale by adding more containers to a single mod, instead add more pods for scaling](images/pods-scaling.png)
