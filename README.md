@@ -92,4 +92,6 @@ Atomic operations in concurrent programming are program operations that run comp
 5) Can send traffice to endpoints outside the cluster
 6) Can do TCP and UDP
 
-## [Review Architecture](docs/k-architectue.png)
+## [Review Architecture](images/k-architectue.png)
+
+## [Getting Kubernetes](docs/getting-kubernetes.md)
