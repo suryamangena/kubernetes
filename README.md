@@ -5,12 +5,12 @@ Kubernetes addresses the management challenges of containers. It is orchestrator
 Cluster is made up of one or more masters and bunch of nodes. 
 
 ## Master
-    -Software runs in master called as Control plane
-    -Never deploy application without having multi-master H/A control plane 
-    -3 Masters are suggested to have in cluster
-    -If has any trouble, 5 masters are suggested
-    -For example, 3 masters, in this 1 will be leader and other will be followers, if leader goes down other followers come together to elect new leader among them
-    -[Run business apps in nodes and leave masters for control plane operations](images/master-business-app.png)
+1) Software runs in master called as Control plane
+2) Never deploy application without having multi-master H/A control plane 
+3) Masters are suggested to have in cluster
+4) If has any trouble, 5 masters are suggested
+5) For example, 3 masters, in this 1 will be leader and other will be followers, if leader goes down other followers come together to elect new leader among them
+6) [Run business apps in nodes and leave masters for control plane operations](images/master-business-app.png)
 
 ## Nodes
 Nodes do the work 
