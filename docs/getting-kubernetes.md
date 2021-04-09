@@ -9,3 +9,5 @@
 3) Publish it to repo (Container Registry)
 4) Kubernetes Manifest 
 5) Post to apiserver in master
+
+Github: https://github.com/nigelpoulton/getting-started-k8s.git
